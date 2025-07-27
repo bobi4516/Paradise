@@ -11,7 +11,7 @@
 	required_players = 15
 	required_enemies = 1
 	recommended_enemies = 4
-	var/vampire_amount = 4
+	var/vampire_amount = 1
 	///list of minds of soon to be vampires
 	var/list/datum/mind/pre_vampires = list()
 
