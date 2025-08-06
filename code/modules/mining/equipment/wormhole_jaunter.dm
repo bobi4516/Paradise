@@ -23,9 +23,13 @@
 
 
 /obj/item/wormhole_jaunter/attack_self(mob/user)
-	user.visible_message(span_notice("[user.name] активиру[pluralize_ru(user.gender,"ет","ют")] [declent_ru(ACCUSATIVE)]!"))
-	SSblackbox.record_feedback("tally", "jaunter", 1, "User") // user activated
-	activate(user, TRUE)
+	  if(!is_mining_level(user.z) || istype(get_area(user), /area/ruin/space/bubblegum_arena))	
+      user.visible_message(span_notice("[user.name] активиру[pluralize_ru(user.gender,"ет","ют")] [declent_ru(ACCUSATIVE)]!"))
+	    SSblackbox.record_feedback("tally", "jaunter", 1, "User") // user activated
+	    activate(user, TRUE)
+else
+   to_chat(user, span_notice("Ошибка! Требуется натуральная гравитация для размещения якоря")
+return
 
 
 /obj/item/wormhole_jaunter/proc/turf_check(mob/user)
