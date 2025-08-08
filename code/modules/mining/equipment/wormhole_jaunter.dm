@@ -23,7 +23,7 @@
 
 
 /obj/item/wormhole_jaunter/attack_self(mob/user)
-    user.visible_message(span_notice("[user.name] активиру[pluralize_ru(user.gender,"ет","ют")] [declent_ru(ACCUSATIVE)]!"))
+	user.visible_message(span_notice("[user.name] активиру[pluralize_ru(user.gender,"ет","ют")] [declent_ru(ACCUSATIVE)]!"))
 	SSblackbox.record_feedback("tally", "jaunter", 1, "User") // user activated
 	activate(user, TRUE)
 
