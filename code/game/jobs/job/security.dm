@@ -56,9 +56,8 @@
 
 	implants = list(
       /obj/item/implant/mindshield/ert,
-      /obj/item/implant/weapons_auth, )
-  
-  )
+      /obj/item/implant/weapons_auth )
+    )
 	backpack = /obj/item/storage/backpack/security
 	satchel = /obj/item/storage/backpack/satchel_sec
 	dufflebag = /obj/item/storage/backpack/duffel/security
