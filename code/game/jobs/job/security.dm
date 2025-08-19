@@ -52,9 +52,8 @@
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/melee/baton/telescopic = 1,
 		/obj/item/security_voucher = 1
-	    )
-
-        implants = list(/obj/item/implant/mindshield/ert, /obj/item/implant/weapons_auth)
+	)
+    implants = list(/obj/item/implant/mindshield/ert, /obj/item/implant/weapons_auth)
 
 	backpack = /obj/item/storage/backpack/security
 	satchel = /obj/item/storage/backpack/satchel_sec
